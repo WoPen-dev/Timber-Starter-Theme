@@ -1,0 +1,7 @@
+/node_modules
+/vendor
+wp-content
+.sass-cache/
+composer.lock
+style.css.map
+package-lock.json
