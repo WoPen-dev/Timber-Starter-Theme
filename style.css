@@ -32,6 +32,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -917,37 +918,24 @@ a {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-.main-navigation {
-  clear: both;
+.header {
   display: block;
-  float: left;
   width: 100%; }
-  .main-navigation ul {
-    display: none;
-    list-style: none;
-    margin: 0;
-    padding-left: 0; }
-    .main-navigation ul ul {
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
-      position: absolute;
-      top: 100%;
-      left: -999em;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999em;
-        top: 0; }
-      .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
+  .header h1 {
+    font-family: 'Dancing Script', cursive; }
+  .header nav {
+    justify-content: center;
+    margin-bottom: 0rem; }
+    .header nav ul {
+      list-style: none;
+      margin: 0;
+      padding-left: 0; }
+      .header nav ul li:hover > ul, .header nav ul li.focus > ul {
         left: 100%; }
-      .main-navigation ul ul a {
-        width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
-  .main-navigation li {
+  .header li {
     float: left;
     position: relative; }
-  .main-navigation a {
+  .header a {
     display: block;
     text-decoration: none; }
 
@@ -1099,6 +1087,13 @@ a {
 .page-links {
   clear: both;
   margin: 0 0 1.5em; }
+
+h1.article-h1 {
+  display: none; }
+
+div.article-body p {
+  margin: 1rem 2rem;
+  text-align: justify; }
 
 /*--------------------------------------------------------------
 ## Comments
